@@ -1,0 +1,32 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>BarCodeZPL</Name>
+    <Description>Dinamic Barcode ZPL Label Generator</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BarCodeZPL</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="V2.csproj" File="V2.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
+      </Folder>
+      <Folder Name=".vs" TargetFolderName=".vs" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="Form1.cs">Form1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Designer.cs">Form1.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Form1.resx">Form1.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="RawPrinterHelper.cs">RawPrinterHelper.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
